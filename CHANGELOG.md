@@ -5,6 +5,8 @@
 **Added:**
 - checking the openaikey exists in the .env
 - basic chat interaction with chatgpt
+- added requirements.txt
+- wrote a first notebook to use a simple chain in langchain with openai
 ---
 
 ## v1.0.0 —Jan. 4, 2024
