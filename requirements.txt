@@ -6,3 +6,5 @@ python-dotenv
 langchain
 langchain-openai
 jupyterlab
+beautifulsoup4
+faiss-cpu # vector store
