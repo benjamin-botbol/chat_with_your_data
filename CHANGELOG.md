@@ -1,5 +1,12 @@
 # Change log
 
+## v1.0.1 — Jan. 16, 2024
+
+**Added:**
+- added agents notebook
+- added notebook to test the tavily api retriever
+- reorganized the code under source
+
 ## v1.0.1 — Jan. 11, 2024
 
 **Added:**
