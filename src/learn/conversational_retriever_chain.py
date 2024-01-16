@@ -14,15 +14,16 @@ from langchain.chains import create_retrieval_chain
 
 
 def conversational_retrieval_chain(url):
-    llm = ChatOpenAI()
-    # First we need a prompt that we can pass into an LLM to generate this search query
-    docs = docs_loaded_from_web(url)
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="chat_history"),
         ("user", "{input}"),
         ("user",
          "Given the above conversation, generate a search query to look up in order to get information relevant to the conversation")
     ])
+
+    llm = ChatOpenAI()
+    # First we need a prompt that we can pass into an LLM to generate this search query
+    docs = docs_loaded_from_web(url)
     retriever = build_whole_text_recursive_faiss_retriever(docs)
 
     print(f'number of documents after retrieving from {url} : {len(retriever.get_relevant_documents(""))}')

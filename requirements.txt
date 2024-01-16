@@ -8,3 +8,6 @@ langchain-openai
 jupyterlab
 beautifulsoup4
 faiss-cpu # vector store
+langchain-community
+tavily-python
+langchainhub
