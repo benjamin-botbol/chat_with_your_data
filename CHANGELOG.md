@@ -1,4 +1,7 @@
 # Change log
+## v1.0.1 — Jan. 18, 2024
+- added original langchain notebooks in notebooks/learn
+
 
 ## v1.0.1 — Jan. 16, 2024
 
