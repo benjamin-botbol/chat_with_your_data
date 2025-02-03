@@ -11,3 +11,5 @@ faiss-cpu # vector store
 langchain-community
 tavily-python
 langchainhub
+langserve[all]
+pydantic==1.10.13
